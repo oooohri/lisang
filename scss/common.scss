@@ -11,9 +11,9 @@
 }
 
 // color
-.bg-purple {background-color: var(--purple) !important;}
-.bg-mint {background-color: var(--mint) !important;}
-.bg-hotpink {background-color: var(--hotpink) !important;}
+.bg-purple {background-color: var(--purple) !important;  color: #fff !important}
+.bg-mint {background-color: var(--mint) !important; color: #fff !important;}
+.bg-hotpink {background-color: var(--hotpink) !important;  color: #fff !important}
 
 // opacity
 .text-op70 {color: #fff; opacity: 70%;}
@@ -29,7 +29,7 @@
 .text-xs {font-size: 14px;}
 
 // icon
-.icon { display: inline-block; width: 16px; height: 16px; }
+.icon { display: inline-block; width: 16px; height: 16px; display: flex; }
 .search {background: url(../img/icon/icon-search.svg) no-repeat;}
 
 // hedaer
@@ -47,5 +47,7 @@ nav{
     justify-content: space-around;
     ul {
         display: flex;
+        gap: 40px;
+        align-items: center;
     }
 }
