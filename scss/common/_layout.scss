@@ -2,6 +2,7 @@
 #wrap {
     position: relative;
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -10,7 +11,7 @@
     font-weight: 700;
 }
 // header
-#hd {
+header {
     position: fixed;
     left: 0;
     right: 0;
@@ -19,8 +20,6 @@
     color: var(--thick-purple);
     z-index: 10;
     background: #fff;
-}
-header {
     nav{
         height: inherit;
         display: flex;
@@ -32,17 +31,21 @@ header {
             gap: 38px;
             align-items: center;
         }
-        .auth-nav {
+        .auth {
             gap: 28px;
         }
     }
 }
 // main
-#ct {
+main {
     margin-top: 100px;
+    display: flex;
+    flex: 1;
 }
 // footer
 footer {
+    background: var(--purple);
+    color: #fff;
     padding: 55px 115px;
     ul, .footer-info {
         display: flex;
@@ -52,6 +55,7 @@ footer {
     }
     hr {
         margin: 38px 0 44px;
+        border: 2px solid #fff; opacity: 30%;
     }
     .footer-info {
         justify-content: space-between;
