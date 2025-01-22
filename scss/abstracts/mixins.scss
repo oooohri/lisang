@@ -1,0 +1,25 @@
+// Breakpoints
+// 최소 너비
+@mixin media-min($breakpoints) {
+	$min: map-get($grid-breakpoints, $breakpoints);
+
+	@media (min-width: $min) {
+		@content;
+	}
+}
+// 최대 너비
+@mixin media-max($breakpoints) {
+	$max: map-get($grid-breakpoints, $breakpoints) - 0.02;
+
+	@media (max-width: $max) {
+		@content;
+	}
+}
+
+// Grid
+$grid-breakpoints: (
+	"sm": 576px,
+	"md": 768px,
+	"lg": 992px,
+	"xl": 1200px
+);

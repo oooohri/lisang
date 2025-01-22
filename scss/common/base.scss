@@ -39,6 +39,7 @@ u{text-decoration-thickness: 1px;text-underline-position: under;}
 	--primary: #1087F5;
 	--red: #EA3223;
 	--hotpink: #E93A7D;
+	--container-padding : 0 20px;
 }
 
 .bg-purple {background-color: var(--purple) !important;  color: #fff !important}
@@ -61,5 +62,8 @@ u{text-decoration-thickness: 1px;text-underline-position: under;}
 // icon
 .icon { display: inline-block; width: 16px; height: 16px; display: flex; }
 .search {background: url(../img/icon/icon-search.svg) no-repeat;}
+.twitter {background: url(../img/icon/icon-twitter.svg) no-repeat;}
+.facebook {background: url(../img/icon/icon-facebook.svg) no-repeat;}
+.google-plus {background: url(../img/icon/icon-google-plus.svg) no-repeat;}
 
 

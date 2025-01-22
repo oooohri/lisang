@@ -15,7 +15,7 @@
     <div id="wrap">
         <header id="hd">
             <nav>
-                <a href="#">Startup 3</a>
+                <a href="#" class="logo">Startup 3</a>
                 <ul class="main-nav">
                     <li><a href="#none">Home</a></li>
                     <li><a href="#none">Features</a></li>
@@ -25,33 +25,324 @@
                 </ul>
                 <ul class="auth-nav">
                     <li><a href="#none">sign In</a></li>
-                    <li class=""><a href="#none" class="btn bg-purple">sign up</a></li>
+                    <li class=""><a href="#none" class="btn bg-purple">sign Up</a></li>
                 </ul>
             </nav>
-    </header>
-    <main></main>
-    <footer>
-        <ul>
-            <li>Tour</li>
-            <li>Features</li>
-            <li>Pricing Plans</li>
-            <li>Our Works</li>
-            <li>Brands</li>
-            <li>Contacts</li>
-        </ul>
-        <hr>
-        <ul>
-            <li>Startup 3</li>
-            <li>Startup Framework contains components and complex blocks which can easily be integrated into almost any design. </li>
-            <li>Privacy Policy</li>
-            <li>Terms</li>
-            <ul class="sns">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </ul>
-    </footer>
+        </header>
+        <main id="ct">
+            <div class="container">
+
+                <div class="main-block">
+                    <h3 class="main-title">문의하기</h3>
+                    <p class="main-sub">문의 내용을 자세히 남겨주시면 정확한 상담이 가능합니다</p>
+                </div>
+                <section class="download">
+                    <article class="download-separate">
+                        <div class="content-box">
+                            <div class="content-text">
+                                <span class="text-blue fs16 font-weight-bold">Brochure</span><br>
+                                <h4 class="fs24 ">회사소개서</h4>
+                            </div>
+                            <div class="content-download">
+                                <a class="content-btn" href="">
+                                    <strong>종합병원</strong>
+                                    <i class="icon icon-download"></i>
+                                </a>
+                                <a class="content-btn" href="">
+                                    <strong>병·의원</strong>
+                                    <i class="icon icon-download"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="download-separate">
+                        <div class="content-box">
+                            <div class="content-text">
+                                <span class="text-blue font-weight-bold">Book</span><br>
+                                <h4 class="fs24">사례모음집</h4>
+                            </div>
+                            <div class="content-download">
+                                <a class="content-btn">
+                                    <strong>다운로드</strong>
+                                    <span class="icon icon-download"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </section> 
+                <form id="inquiryForm">
+                    <section class="channel mt-0">
+                        <div class="channel-separate">
+                            <div class="content-text">
+                                <strong class="require fs16">유알스코프를 알게된 경로</strong>
+                            </div>
+                            <div class="form-box">
+                                <div class="form-flex">
+                                    <label>
+                                        <span> 온라인검색</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="online" value="online">
+                                    </label>
+                                    <label for="news">
+                                        <span> 뉴스 또는 기사</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="news" value="news">
+                                    </label>
+                                    <label for="hire">
+                                        <span> 채용 사이트</span>
+                                            <input class="form-check-input" type="radio" name="channel" id="hire" value="hire">
+                                    </label>
+                                    <label for="conference">
+                                        <span>컨퍼런스, 학회 등</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="conference" value="conference">
+                                    </label>
+                                </div>
+                                <div class="form-flex">
+                                    <label for="brochure">
+                                        <span>브로슈어</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="brochure" value="brochure">
+                                    </label>
+                                    <label for="headhunter">
+                                        <span>헤드헌터</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="headhunter" value="headhunter">
+                                    </label>
+                                    <label for="introduction">
+                                        <span>업계 동료 소개</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="introduction" value="introduction">
+                                    </label>
+                                    <label for="etc">
+                                        <span>기타</span>
+                                        <input class="form-check-input" type="radio" name="channel" id="etc" value="etc">
+                                    </label>
+                                </div>
+                                <!-- [D] 기타 선택시 보임  style="display: none;" -->
+                                <div class="form-flex">
+                                    <input class="w-100" type="text" placeholder="상세내용">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <hr>
+                
+                    <section class="inquiry">
+                        <div class="form-box">
+                            <div class="form-flex">
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="name"><strong class="require">이름</strong></label>
+                                    </div>
+                                    <input type="text" id="name" name="name" placeholder="이름을 입력해주세요.">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="phone"><strong class="require">연락처</strong></label>
+                                    </div>
+                                    <input type="tel" id="phone" name="phone" placeholder="연락처를 입력해주세요.">
+                                </div>
+                            </div>
+                
+                            <div class="form-flex">
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="company"><strong class="require">기관명</strong></label>
+                                    </div>
+                                    <input type="text" id="company" name="company" placeholder="소속된 기관명을 입력해주세요.">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="position"><strong class="require">직책(직급)</strong></label>
+                                    </div>
+                                    <input type="text" id="position" name="position" placeholder="직책 또는 직급을 입력해주세요.">
+                                </div>
+                            </div>
+                
+                            <div class="form-flex">
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="email"><strong class="require">이메일 주소</strong></label>
+                                    </div>
+                                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요.">
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-label-text">
+                                        <label for="address"><strong>홈페이지 주소</strong></label>
+                                    </div>
+                                    <input type="text" id="address" name="address" placeholder="홈페이지 주소를 입력해주세요">
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="form-box check">
+                            <div class="content-text">
+                                <strong>관심분야</strong>
+                            </div>
+                            <div class="form-checkbox">
+                                <div class="form-flex">
+                                    <label for="consulting">
+                                        <span>수가 컨설팅</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="consulting" value="consulting">
+                                    </label>
+                                    <label for="analyze">
+                                        <span>진료수가 분석</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="analyze" value="analyze">
+                                    </label>
+                                    <label for="service">
+                                        <span>정기분석 서비스</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="service" value="service">
+                                    </label>
+                                    <label for="react">
+                                        <span>현지조사 대응</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="react" value="react">
+                                    </label>
+                                </div>
+                                <div class="form-flex">
+                                    <label for="active">
+                                        <span>환자유입 활성</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="active" value="active">
+                                    </label>
+    
+                                    <!-- inventory -->
+                                    <label for="inventory">
+                                        <span>장비 가동률 재고</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="inventory" value="inventory">
+                                    </label>
+                                    <label for="academy">
+                                        <span>수가 아카데미</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="academy" value="academy">
+                                    </label>
+                                    <label for="etc2">
+                                        <span>기타</span>
+                                        <input class="form-check-input" type="checkbox" name="channel" id="etc2" value="etc2">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="form-box one-row">
+                            <div class="input-group">
+                                <div class="input-label-text">
+                                    <label for="urscope"><strong class="require">유알스코프</strong></label>
+                                </div>
+                                <input type="text" id="urscope" name="urscope" placeholder="제목을 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="form-box one-row">
+                            <div class="input-group">
+                                <div class="input-label-text">
+                                    <label for="title"><strong class="require">제목</strong></label>
+                                </div>
+                                <input type="text" id="title" name="title" placeholder="제목을 입력해주세요.">
+                            </div>
+                        </div>
+                
+                        <div class="form-box content">
+                            <div class="input-group">
+                                <div class="input-label-text">
+                                    <label for="contents"><strong class="require">문의내용</strong></label>
+                                </div>
+                                <textarea id="contents" name="contents" placeholder="문의 내용을 입력해주세요." rows="5"></textarea>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <hr>
+                
+                    <section class="agree">
+                        <div class="form-box">
+                            <div class="d-flex">
+                                <input type="checkbox" id="agree-checkbox">
+                                <label for="agree-checkbox" class="align-self-center ms-2"><strong>개인정보 수집 및 이용에 동의합니다.</strong></label>
+                            </div>
+                            <div class="sub-text">
+                                문의하신 내용에 대한 원인 파악 및 원활한 상담을 위하여 이름, 연락처, 기관, 직책, 이메일 정보를 수집합니다. 수집된 개인정보는 <b>3년간 보관 후 파기</b>됩니다.
+                            </div>
+                        </div>
+                        <a href="" class="agree-detail"><u>자세히보기</u></a>
+                    </section>
+                
+                    <button type="button" class="btn btn-ylw submit" onclick="handleSubmit()">
+                        문의 제출하기
+                    </button>
+    
+                    <script>
+                        // [D] 팝업 임시코드 
+                        function handleSubmit() {
+                            var modal = new bootstrap.Modal(document.getElementById('pop'));
+                            modal.show();
+                        }
+                    </script>
+                </form>
+                <section id="location" class="location">
+                    <div class="main-block">
+                        <h3 class="main-title">Location</h3>
+                        <p class="main-sub">오시는 길</p>
+                    </div>
+                    <div class="location-map">
+                        <img src="images/_temp/map.png" class="d-none d-lg-block" alt="">
+                        <img src="images/_temp/map_m.png" class="d-lg-none" alt="">
+                        <!-- <div id="daumRoughmapContainer1736905789788" class="root_daum_roughmap root_daum_roughmap_landing"></div> -->
+                    </div>
+                    <!-- <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                    <script>
+                        new daum.roughmap.Lander({
+                            "timestamp" : "1736905789788",
+                            "key" : "2ms64",
+                        }).render();
+                    </script> -->
+                    <div class="location-separate">
+                        <div class="location-group">
+                            <div>
+                                <h5>주소</h5>
+                                <span>서울시 강남구 언주로 103길 7, 3층, 유알스코프코리아</span>
+                            </div>
+                            <div class="location-inquiry-box">
+                                <h5 class="lh-base">문의</h5>
+                                <div class="location-inquiry-content">
+                                    <div class="tel">
+                                        <strong>Tel.</strong>
+                                        <span>02-6952-302</span>
+                                    </div>
+                                    <div class="fax">
+                                        <strong>Fax.</strong>
+                                        <span>02-6952-301</span>
+                                    </div>
+                                    <div class="email">
+                                        <strong>E-mail.</strong>
+                                        <span>urscope@urscope.co.kr</span>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <a class="location-search" href="#none">
+                            <span>Kakao 경로검색</span>
+                            <img src="./images/icon/location.svg" alt="">
+                        </a>
+                    </div>
+                </section>    
+            </div>
+        </main>
+        <footer class="bg-purple">
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="">Tour</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Pricing Plans</a></li>
+                    <li><a href="">Our Works</a></li>
+                    <li><a href="">Brands</a></li>
+                </ul>
+            </nav>
+            <hr class="border-op30">
+            <div class="footer-info">
+                <p class="logo">Startup 3</p>
+                <p>Startup Framework contains components and <br> complex blocks which can easily be integrated into <br> almost any design.</p>
+                <p>Privacy Policy</p>
+                <p>Terms</p>
+                <ul class="sns">
+                    <li><a href="https://twitter.com"><i class="icon twitter"></i></a></li>
+                    <li><a href="https://facebook.com"><i class="icon facebook"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="icon google-plus"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
