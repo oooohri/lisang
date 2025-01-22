@@ -10,9 +10,11 @@
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/common.js"></script>
 </head>
 <body>
     <div id="wrap">
+        <!-- header -->
         <header id="hd">
             <nav>
                 <a href="#" class="logo">Startup 3</a>
@@ -24,15 +26,44 @@
                     <li><a href="#none" class="icon search"></a></li>
                 </ul>
                 <ul class="auth">
-                    <li><a href="#none">sign In</a></li>
-                    <li class=""><a href="#none" class="btn bg-purple">sign Up</a></li>
+                    <li><a href="#none">Sign In</a></li>
+                    <li class=""><a href="#none" class="btn bg-purple">Sign Up</a></li>
                 </ul>
+                <button type="button" class="gnb-toggle"></button>
             </nav>
+            <div class="gnb-menu">
+                <ul class="gnb-menu-inner">
+                    <li>
+                        <strong>Home</strong>
+                    </li>
+                    <li>
+                        <strong>Features</strong>
+                    </li>
+                    <li>
+                        <strong>Blog</strong>
+                    </li>
+                    <li>
+                        <strong>Shop</strong>
+                    </li>
+                </ul>
+                <div class="gnb-menu-auth">
+                    <div><a href="#none">Sign In</a></div>
+                    <div><a href="#none">Sign Up</a></div>
+                </div>
+            </div>
         </header>
+        <!-- // header -->
+
+        <!-- container -->
         <main id="ct">
+<!-- 페이지 시작 -->
             <div class="container">
             </div>
+<!-- // 페이지 시작 -->
         </main>
+        <!-- // container -->
+        
+        <!-- footer  -->
         <footer id="ft">
             <nav>
                 <ul class="main-nav">
@@ -45,7 +76,7 @@
             </nav>
             <hr>
             <div class="footer-info">
-                <p class="logo">Startup 3</p>
+                <div class="logo">Startup 3</div>
                 <p>Startup Framework contains components and <br> complex blocks which can easily be integrated into <br> almost any design.</p>
                 <p>Privacy Policy</p>
                 <p>Terms</p>
@@ -56,6 +87,7 @@
                 </ul>
             </div>
         </footer>
+        <!-- // footer -->
     </div>
 </body>
 </html>

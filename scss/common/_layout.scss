@@ -5,6 +5,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .logo {
     font-size: 24px;
@@ -25,15 +26,30 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 115px;
+        padding: 0 40px;
         ul {
             display: flex;
             gap: 38px;
             align-items: center;
         }
-        .auth {
+        .auth-nav {
             gap: 28px;
         }
+        .gnb-toggle {
+            display: none;
+        }
+    }
+    .gnb-menu {
+        position: absolute;
+        transition: .5s;
+        top: 100%;
+        left: 0;
+        right: 0;
+        pointer-events: none; 
+        transform: translateX(100%); 
+        background-color: #fff;
+        opacity: 0;
+        height: 100vh;
     }
 }
 // main
@@ -61,6 +77,89 @@ footer {
         justify-content: space-between;
         .sns {
             gap: 35px;
+            margin-top: 7px;
         }
+    }
+}
+
+// mob
+@include media-max(lg) {
+    // header
+    #hd {
+        #gnb, .auth {
+            display: none;
+        }
+        .gnb-toggle {
+            display: inline-block;
+            position: relative;
+            width: 32px;
+            height: 32px;
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                right: 2px;
+                width: 20px;
+                height: 3px;
+                border-radius: 2px;
+                transition: .2s;
+                background: var(--purple);
+            }
+            &::before {
+                top: calc(50% - 7px);
+            }
+            &::after {
+                top: 50%;
+                width: 15px;
+            }
+        }
+        
+        .gnb-menu-inner>li {
+            margin-bottom: 30px;
+        }
+    }
+    // header 오픈할 때
+    .gnb-open {
+        #hd {
+            .gnb-menu {
+                opacity: 1;
+                pointer-events: all;
+                transform: translateX(50%);
+            }
+            .gnb-toggle::before {
+            top: 50%;
+            -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+            }
+            .gnb-toggle::after {
+                top: 50%;
+                width: 20px;
+                -webkit-transform: translateY(-50%) rotate(-45deg);
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
+    }
+
+    #ft {
+        .footer-info {
+            align-items: center;
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@include media-max(sm){
+    #ft {
+        .main-nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+        hr {
+            margin: 15px 0;
+        }
+        .footer-info {
+            flex-direction: column;
+        }   
     }
 }
