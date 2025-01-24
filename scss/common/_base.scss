@@ -10,14 +10,8 @@
 }
 
 html{font-size: 62.5%;scroll-behavior: smooth;}
-body {padding:0; margin:0; font-family:'DM Sans', sans-serif; line-height: 1.5; color:#333; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%;letter-spacing: -.02em;font-size: 14px;}
-
-@media (min-width: 768px){
-	body{font-size: 16px;}
-}
-
+body {padding:0; margin:0; font-family:'DM Sans', sans-serif; line-height: 26px; color:#333; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%;letter-spacing: -.02em;font-size: 16px;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
-
 fieldset {display:block; margin:0; padding:0; border:0;}
 form {margin:0; padding:0;}
 a,a:hover,a:focus,a:active{color: inherit;text-decoration:none}
@@ -25,7 +19,6 @@ img {border:0; vertical-align:top;max-width: 100%;}
 em, address {font-style:normal;}
 table {width:100%; border-collapse:collapse;}
 button {font-family:'DM Sans', sans-serif;cursor: pointer;border: 0;background: none;}
-
 body, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label{margin: 0;padding: 0}
 ul, li{list-style:none;}
 u{text-decoration-thickness: 1px;text-underline-position: under;}
@@ -39,32 +32,25 @@ u{text-decoration-thickness: 1px;text-underline-position: under;}
 	--mint: #25DAC5;
 	--primary: #1087F5;
 	--red: #EA3223;
-	--hotpink: #E93A7D;
 	--container-padding : 0 20px;
 }
 
 .bg-purple {background-color: var(--purple) !important;  color: #fff !important}
 .bg-light-purple {background-color: var(--light-purple) !important;  color: #fff !important}
 .bg-mint {background-color: var(--mint) !important; color: #fff !important;}
-.bg-hotpink {background-color: var(--hotpink) !important;  color: #fff !important}
+
 .text-purple {color: var(--thick-purple) !important;}
 .text-thick-purple {color: var(--thick-purple) !important;}
 .text-light-purple {color: var(--light-purple) !important;}
-
 .text-light-black {color: #151439; opacity: 40%;}
+
 .border-op30 {border: 2px solid #fff; opacity: 30%;}
 .border-op20 {border: 2px solid #fff; opacity: 20%;}
 .border-gray {border: 2px solid #EBEAED;}
 
 .font-weight-semibold {font-weight: 600;}
+.font-weight-nomalbold {font-weight: 500;}
 .ls-2 {letter-spacing: 2px;}
-// util
-.text-xxl {font-size: 58px;}
-.text-xl {font-size: 24px;}
-.text-lg {font-size: 22px;}
-.text-md {font-size: 18px;}
-.text-sm {font-size: 16px;}
-.text-xs {font-size: 14px;}
 
 // icon
 .icon { display: inline-block; width: 16px; height: 16px; display: flex; }

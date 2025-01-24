@@ -78,7 +78,6 @@
         .prod-info-wrp {
             .prod-tit {
                 h2 {
-                    font-size: 32px;
                     margin-bottom: 12px;
                 }
             }
@@ -91,6 +90,10 @@
                     .btn {
                         border-radius: 100px;
                         padding: 9px 30px 9px 18px;
+                        width: 100px;
+                        .icon-dropdown {
+                            margin-left: 35px;
+                        }
                     }
                 }
                 .option-wrp {
