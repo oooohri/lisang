@@ -109,6 +109,7 @@
                             align-items: center;
                             gap: 5px;
                             label {
+                                position: relative;
                                 display: inline-block;
                                 width: 22px;
                                 height: 22px;
@@ -131,8 +132,19 @@
                                     opacity: 0;
                                 }
                             }
+                            label::after {
+                                content: "";
+                                width: 10px;
+                                height: 8px;
+                                background: url(../../img/common/icon-chk.svg) no-repeat;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                opacity: 1; 
+                            }
+                          
                         }
-                        
                     }
                     .quantity-option {
                         display: flex;
