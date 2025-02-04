@@ -133,6 +133,7 @@
                                     position: absolute;
                                 }
                             }
+<<<<<<< HEAD
                             .check::after {
                                 position: absolute;
                                 content: "";
@@ -145,8 +146,21 @@
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                             }
+=======
+                            label::after {
+                                content: "";
+                                width: 10px;
+                                height: 8px;
+                                background: url(../../img/common/icon-chk.svg) no-repeat;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                opacity: 1; 
+                            }
+                          
+>>>>>>> f7e0321370f649255849180faf9ef6751108b595
                         }
-                        
                     }
                     .quantity-option {
                         display: flex;
