@@ -22,6 +22,7 @@ button {font-family:'DM Sans', sans-serif;cursor: pointer;border: 0;background: 
 body, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label{margin: 0;padding: 0}
 ul, li{list-style:none;}
 u{text-decoration-thickness: 1px;text-underline-position: under;}
+input {margin: 0; padding: 0; border: none; background: none; outline: none; font: inherit;  color: inherit; box-sizing: border-box;}
 
 // color
 :root{

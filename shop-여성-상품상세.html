@@ -90,7 +90,7 @@
                     <div class="prod-option">
                         <div class="size-option">
                             <span class="text-light-black ls-2 font-weight-semibold text-xs">SIZE</span>
-                            <div class="dropdown-wrp">
+                            <form class="dropdown-wrp">
                                 <div class="dropdown">
                                     <button class="btn border-gray active" type="button" data-toggle="dropdown" aria-expanded="false">
                                         32 <i class="icon-dropdown"></i>
@@ -104,13 +104,13 @@
                                         <a class="dropdown-item" href="#">35</a>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                         <div class="option-wrp">
                             <div class="color-option">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs">COLOR</span>
                                     <form class="btn border-gray">
-                                        <label for="color1">
+                                        <label for="color1" class="check">
                                             <input type="radio" name="option" value="1" id="color1">
                                         </label>
                                         <label for="color2">
@@ -129,11 +129,11 @@
                             </div>
                             <div class="quantity-option">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs">QUANTITY</span>
-                                <div class="quantity-btn-wrp btn border-gray">
+                                <form class="quantity-btn-wrp btn border-gray">
                                     <button class="quantity-btn minus text-light-black">-</button>
-                                    <p class="text-thick-purple">1</p>
+                                    <input type="number" class="text-thick-purple" value="1" min="1">
                                     <button class="quantity-btn plus text-light-black">+</button>
-                                </div>
+                                </form>
                             </div>
                         </div>
                         <ul class="prod-detail-desc text-light-black">
