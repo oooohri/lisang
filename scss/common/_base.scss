@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 html{font-size: 62.5%;scroll-behavior: smooth;}
 body {padding:0; margin:0; font-family:'DM Sans', sans-serif; line-height: 26px; color:#333; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust:100%;letter-spacing: -.02em;font-size: 16px;}
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {display: block;}
@@ -23,110 +22,6 @@ body, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, fo
 ul, li{list-style:none;}
 u{text-decoration-thickness: 1px;text-underline-position: under;}
 input {margin: 0; padding: 0; border: none; background: none; outline: none; font: inherit;  color: inherit; box-sizing: border-box;}
-=======
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "DM Sans", sans-serif;
-  line-height: 26px;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%;
-  letter-spacing: -0.02em;
-  font-size: 16px;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
-}
-fieldset {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-form {
-  margin: 0;
-  padding: 0;
-}
-a,
-a:hover,
-a:focus,
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-img {
-  border: 0;
-  vertical-align: top;
-  max-width: 100%;
-}
-em,
-address {
-  font-style: normal;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-button {
-  font-family: "DM Sans", sans-serif;
-  cursor: pointer;
-  border: 0;
-  background: none;
-}
-body,
-p,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-table,
-th,
-td,
-form,
-fieldset,
-legend,
-input,
-textarea,
-button,
-select,
-label {
-  margin: 0;
-  padding: 0;
-}
-ul,
-li {
-  list-style: none;
-}
-u {
-  text-decoration-thickness: 1px;
-  text-underline-position: under;
-}
->>>>>>> f7e0321370f649255849180faf9ef6751108b595
 
 // color
 :root {
