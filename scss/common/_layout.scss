@@ -92,6 +92,7 @@ footer {
 }
 
 // mob
+// 992
 @include media-max(lg) {
     // header
     #hd {
@@ -121,16 +122,30 @@ footer {
                 width: 15px;
             }
         }
-        
         .gnb-menu-inner>li {
             margin-bottom: 30px;
         }
         .gnb-menu-auth {
             display: flex;
             flex-direction: column;
+            span {
+                display: inline-block;
+                border: 1px solid #2f1893;
+                color: #1e0e62;
+                font-weight: 600;
+                width: 45%;
+                text-align: center;
+                border-radius: 25px;
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+            .sign-up {
+                background: #2f1893;
+                color: #fff;
+            }
         }
     }
-    // header 오픈할 때
+    // header 오픈할 때 - gnb-open은 body에 붙는다.
     .gnb-open {
         #hd {
             .gnb-menu {
@@ -138,6 +153,7 @@ footer {
                 pointer-events: all;
                 transform: translateX(50%);
                 font-size: 22px;
+                padding-left: 35px;
             }
             .gnb-toggle::before {
             top: 50%;
@@ -152,7 +168,28 @@ footer {
             }
         }
     }
-
+    #ct {
+        .all {
+            .bx-wrp {
+                flex-direction: column;
+                .bx img {
+                    width: 100%;
+                }
+            }
+        }
+        .detail {
+            .container {
+                flex-direction: column;
+                gap: 0;
+                .prod-img-wrp {
+                    margin-bottom: 40px;
+                }
+                .prod-info-wrp {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
     #ft {
         .footer-info {
             align-items: center;
@@ -163,7 +200,31 @@ footer {
     }
 }
 
+// 768
+@include media-max(md) {
+    #ct {
+        .category {
+            .bx-wrp {
+                flex-direction: column;
+                .bx img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 576
 @include media-max(sm){
+    #ct {
+        .prod-info-wrp {
+            .prod-option {
+                .prod-detail-desc {
+                    margin: 37px 20px 42px; 
+                }
+            }
+        }
+    }
     #ft {
         .main-nav {
             flex-direction: column;
@@ -174,6 +235,34 @@ footer {
         }
         .footer-info {
             flex-direction: column;
+            .sns {
+                margin-top: 15px;
+            }
         }   
+    }
+}
+
+// 420
+@include media-max(xs) {
+    .gnb-open {
+        #hd {
+            .gnb-menu {
+                padding-left: 15px;
+            }
+        }
+    }
+    .container {
+        max-width: 375px;
+    }
+    .detail {
+        .container {
+            .prod-info-wrp {
+                .prod-desc {
+                    br {
+                        display: block !important;
+                    }
+                }
+            }
+        }
     }
 }

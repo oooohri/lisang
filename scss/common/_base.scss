@@ -19,14 +19,11 @@ button {font-family:'DM Sans', sans-serif;cursor: pointer;border: 0;background: 
 body, p, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, label{margin: 0;padding: 0}
 ul, li{list-style:none;}
 u{text-decoration-thickness: 1px;text-underline-position: under;}
-input {margin: 0; padding: 0; border: none; background: none; outline: none; font: inheritcolor: inherit; box-sizing: border-box;
+input {margin: 0; padding: 0; border: none; background: none; outline: none; font:inherit; color:inherit; box-sizing: border-box;}
+input[type="number"] { -moz-appearance: textfield; -webkit-appearance: none; appearance: none; }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; display: none; }
+input[type="number"]::-moz-spin-button { display: none; }
 
-/* 기본적으로 모든 브라우저에서 제거 */
-input[type="number"] { -moz-appearance: textfield; -webkit-appearance: textfieldappearance: textfield; }
-input[type="number"]::-webkit-inner-spin-butto,
-input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
-input[type="number"]::-moz-inner-spin-button,
-input[type="number"]::-moz-outer-spin-button { -moz-appearance: none; margin: 0; }
 
 
 // color

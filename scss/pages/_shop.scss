@@ -84,6 +84,9 @@
             .prod-desc {
                 width: 370px;
                 margin: 23px 0 34px;
+                br {
+                    display: none;
+                }
             }
             .prod-option {
                 .size-option {
