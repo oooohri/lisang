@@ -80,7 +80,7 @@
                     </div>
                 </article>
             </section>
-            <section class="prod-info-wrp">
+            <form class="prod-info-wrp">
                 <article class="prod-info">
                     <div class="prod-tit text-thick-purple">
                         <h2 class="font-weight-bold text-xl">Boyfriend High Jeans</h2>
@@ -90,7 +90,7 @@
                     <div class="prod-option">
                         <div class="size-option">
                             <span class="text-light-black ls-2 font-weight-semibold text-xs">SIZE</span>
-                            <form class="dropdown-wrp">
+                            <div class="dropdown-wrp">
                                 <div class="dropdown">
                                     <button class="btn border-gray active" type="button" data-toggle="dropdown" aria-expanded="false">
                                         32 <i class="icon-dropdown"></i>
@@ -104,12 +104,12 @@
                                         <a class="dropdown-item" href="#">35</a>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                         <div class="option-wrp">
                             <div class="color-option">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs">COLOR</span>
-                                    <form class="btn border-gray">
+                                    <div class="btn border-gray">
                                         <label for="color1" class="check">
                                             <input type="radio" name="option" value="1" id="color1">
                                         </label>
@@ -125,15 +125,15 @@
                                         <label for="color5">
                                             <input type="radio" name="option" value="5" id="color5">
                                         </label>
-                                    </form>
+                                    </div>
                             </div>
                             <div class="quantity-option">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs">QUANTITY</span>
-                                <form class="quantity-btn-wrp btn border-gray">
+                                <div class="quantity-btn-wrp btn border-gray">
                                     <button class="quantity-btn minus text-light-black">-</button>
                                     <input type="number" class="text-thick-purple" value="1" min="1">
                                     <button class="quantity-btn plus text-light-black">+</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                         <ul class="prod-detail-desc text-light-black">
@@ -142,13 +142,13 @@
                             <li>Mid-stretch denim</li>
                         </ul>
                         <div class="prod-btn">
-                            <button type="button" class="btn bg-light-purple font-weight-semibold">Add to Cart</button>
+                            <button type="submit" id="addToCart" class="btn bg-light-purple font-weight-semibold">Add to Cart</button>
                             <button type="button" class="btn text-light-purple font-weight-semibold">Add to Wish List</button>
                         </div>
                         
                     </div>
                 </article>
-            </section>
+            </form>
         </div>
 </div>
 <!-- // 페이지 시작 -->
