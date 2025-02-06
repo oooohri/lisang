@@ -172,6 +172,7 @@ footer {
         .all {
             .bx-wrp {
                 flex-direction: column;
+                margin-bottom: 40px;
                 .bx img {
                     width: 100%;
                 }
@@ -181,8 +182,10 @@ footer {
             .container {
                 flex-direction: column;
                 gap: 0;
+                margin-top: 60px;
                 .prod-img-wrp {
                     margin-bottom: 40px;
+
                 }
                 .prod-info-wrp {
                     margin-bottom: 60px;
@@ -211,6 +214,11 @@ footer {
                 }
             }
         }
+        .detail {
+            .prod-info-wrp {
+                margin-left: 40px;
+            }
+        }
     }
 }
 
@@ -222,6 +230,16 @@ footer {
                 .prod-detail-desc {
                     margin: 37px 20px 42px; 
                 }
+            }
+        }
+        .all {
+            .dropdown-wrp {
+                gap: 8px;
+            }
+        }
+        .detail {
+            .prod-info-wrp {
+                margin-left: 85px;
             }
         }
     }
@@ -242,8 +260,11 @@ footer {
     }
 }
 
-// 420
+// 435
 @include media-max(xs) {
+    .container {
+        max-width: 380px;
+    }
     .gnb-open {
         #hd {
             .gnb-menu {
@@ -251,17 +272,50 @@ footer {
             }
         }
     }
-    .container {
-        max-width: 375px;
+    .all {
+        .dropdown-wrp {
+            overflow-x: auto;
+            padding: 0 20px 0 10px;
+            .dropdown.show {
+                position: unset;
+                .dropdown-menu.show {
+                    top: 30px !important;
+                }
+            }
+            .dropdown:nth-child(1) {
+                min-width: 145px;
+            }
+            .dropdown:nth-child(2) {
+                min-width: 96px;
+            }
+        }
+        .dropdown-wrp::-webkit-scrollbar {
+            display: none;  
+        }
     }
     .detail {
         .container {
             .prod-info-wrp {
-                .prod-desc {
-                    br {
-                        display: block !important;
+                display: block !important;
+                margin-left: 0 !important;
+                .prod-info {
+                    .prod-desc {
+                        span {
+                            display: inline-block !important;
+                        }
                     }
                 }
+            }
+        }
+    }
+}
+// 345 - z fold
+@include media-max(xxs) {
+    .container {
+        max-width: 340px;
+        .prod-info-wrp {
+            .prod-desc {
+                font-size: 13.4px;
             }
         }
     }

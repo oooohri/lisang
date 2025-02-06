@@ -7,7 +7,7 @@
     display: flex;
     gap: 30px;
     .dropdown {
-        margin-bottom: 30px;
+        padding: 10px 0 20px;
         .btn {
             padding: 0 20px;
             border-radius: 0;
@@ -25,10 +25,17 @@
                 margin: 2px 0 0 4px;
             }
         }
-        .btn.active {
+    }
+    .dropdown.show {
+        .btn {
             color: #1E0E62;
             .icon-dropdown { 
+                position: absolute;
+                content: "";
                 background: url(../../img/common/icon-dropdown-show.svg) no-repeat 100% 100%/contain;
+                width: 12px;
+                height: 12px;
+                margin: 2px 0 0 4px;
             }
         }
     }
