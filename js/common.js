@@ -2,17 +2,47 @@ function isMobile(){
 	return  $(window).width() < 992 ;
 }  
 
-$(window).on('load', function(){
-	$('.gnb-toggle').on('click', function(){
-		$('body').toggleClass('gnb-open');
-	});
-	// 사진 zoom 기능
-	$(document).ready(function() {
-		var easyzoom = $('.easyzoom').easyZoom(); 
-	});
+
+// detail - 상품이미지 클릭 시 상세이미지 나타남
+$(document).ready(function () {
+    $(".additional-img img").on("click", function () {
+        var imgSrc = $(this).attr("src"); // 클릭한 이미지의 src 가져오기
+        console.log("Clicked image src: " + imgSrc); // 디버깅: 클릭한 이미지의 src 출력
+        var mainImage = $(".main-img img");
+        var mainImageLink = $(".main-img a"); // 확대이미지
+
+        // w-detail2.jpg와 w-detail3.jpg는 w-detail1.jpg로 변경
+        if (imgSrc.indexOf("w-detail2.jpg") !== -1 || imgSrc.indexOf("w-detail3.jpg") !== -1) {
+            mainImage.attr("src", "./img/shop/w-detail1.jpg");
+            mainImageLink.attr("href", "./img/shop/w-detail1-lg.jpg"); // 확대 이미지 링크도 w-detail1-lg.jpg로 설정
+        } else {
+            // 나머지 이미지는 -1 (5-1,6-1...) 버전으로 변경
+            var newSrc = imgSrc.replace(".jpg", "-1.jpg");
+            var newLargeSrc = newSrc.replace(/(w-detail\d+-1)/, "$1-lg");
+
+            mainImage.attr("src", newSrc); // 메인 이미지로 설정
+            mainImageLink.attr("href", newLargeSrc); // 확대 이미지 링크 설정
+        }
+
+        mainImage.css("width", "470px");
+    });
 });
 
-// dropdown 동작
+// 페이지 로드 시 easyZoom 초기화
+$(window).on('load', function(){
+    // 페이지가 로드된 후 easyZoom을 초기화
+    $(document).ready(function() {
+        // 기존 easyZoom이 초기화되어 있는지 확인
+        var easyzoom = $('.easyzoom').data('easyZoom');
+        if (!easyzoom) {
+            $('.easyzoom').easyZoom(); // 초기화가 되어 있지 않으면 easyZoom 초기화
+        }
+    });
+});
+
+
+
+// detail - dropdown 동작
 $(document).ready(function () {
     $(".dropdown-item").click(function (e) {
         e.preventDefault(); 
@@ -21,6 +51,7 @@ $(document).ready(function () {
     });
 });
 
+// detail - color 선택
 $(document).ready(function () {
     $('input[type="radio"]').on('change', function () {
         // 모든 label에서 check 제거
@@ -31,7 +62,7 @@ $(document).ready(function () {
     });
 });
 
-// +,- 버튼
+// detail -  +,- 버튼
 $(document).ready(function () {
     const minQuantity = 1;
     const maxQuantity = 100;
