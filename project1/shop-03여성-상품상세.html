@@ -26,7 +26,7 @@
                     <li><a href="#none">Home</a></li>
                     <li><a href="#none">Features</a></li>
                     <li><a href="#none">Blog</a></li>
-                    <li><a href="./shop-카테고리선택.html">Shop</a></li>
+                    <li><a href="./shop-01카테고리선택.html">Shop</a></li>
                     <li><a href="#none" class="icon search"></a></li>
                 </ul>
                 <ul class="auth">
@@ -47,7 +47,7 @@
                         <a href="#"><strong>Blog</strong></a>
                     </li>
                     <li role="menuitem">
-                        <a href="./shop-카테고리선택.html"><strong>Shop</strong></a>
+                        <a href="./shop-01카테고리선택.html"><strong>Shop</strong></a>
                     </li>
                 </ul>
                 <div class="gnb-menu-auth">
@@ -62,24 +62,23 @@
         <main id="ct">
 <!-- 페이지 시작 -->
 <div class="detail">
-    <div class="container">               
-            <section class="prod-img-wrp">
-                <article class="prod-img">
-                    <div class="additional-img">
+    <div class="container">  
+        <div class="row flex-nowrap">
+            <section class="prod-img-wrp col-lg-6">
+                <article class="prod-img row flex-nowrap">
+                    <div class="additional-img col-2">
                         <img src="./img/shop/w-detail2.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail3.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail4.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail5.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail6.jpg" alt="상품 상세이미지" tabindex="0">
                     </div>
-                    <div class="main-img">
-                        <a href="./img/shop/w-detail-lg.jpg">
-                            <img id="zoom-img" src="./img/shop/w-detail1.jpg" alt="상품 상세이미지" data-zoom-image="./img/shop/w-detail-lg.jpg">
-                        </a>
+                    <div class="main-img col-10">
+                        <img src="./img/shop/w-detail1.jpg" class="h-100" alt="상품 상세이미지">
                     </div>
                 </article>
             </section>
-            <section class="prod-info-wrp">
+            <section class="prod-info-wrp col-lg-6">
                 <article class="prod-info">
                     <div class="prod-tit text-thick-purple">
                         <h2 class="font-weight-bold text-xl" tabindex="0">Boyfriend High Jeans</h2>
@@ -109,28 +108,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="option-wrp">
-                            <div class="color-option">
+                        <div class="option-wrp row justify-content-start flex-nowrap">
+                            <div class="color-option col-6">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs" tabindex="0">COLOR</span>
                                     <div class="btn border-gray">
                                         <label for="color1" class="check" tabindex="0">
-                                            <input type="radio" name="option" value="1" id="color1" aria-label="밝은 네이비색">
+                                            <input type="radio" name="option" value="1" id="color1" aria-label="밝은 네이비색" aria-checked="true">
                                         </label>
                                         <label for="color2" tabindex="0">
-                                            <input type="radio" name="option" value="2" id="color2" aria-label="네이비색">
+                                            <input type="radio" name="option" value="2" id="color2" aria-label="네이비색" aria-checked="false">
                                         </label>
                                         <label for="color3" tabindex="0">
-                                            <input type="radio" name="option" value="3" id="color3" aria-label="하늘색">
+                                            <input type="radio" name="option" value="3" id="color3" aria-label="하늘색" aria-checked="false">
                                         </label>
                                         <label for="color4" tabindex="0">
-                                            <input type="radio" name="option" value="4" id="color4" aria-label="빨강색">
+                                            <input type="radio" name="option" value="4" id="color4" aria-label="빨강색" aria-checked="false">
                                         </label>
                                         <label for="color5" tabindex="0">
-                                            <input type="radio" name="option" value="5" id="color5" aria-label="초록색">
+                                            <input type="radio" name="option" value="5" id="color5" aria-label="초록색" aria-checked="false">
                                         </label>
                                     </div>
                             </div>
-                            <div class="quantity-option">
+                            <div class="quantity-option col-6">
                                 <span class="text-light-black ls-2 font-weight-semibold text-xs" tabindex="0">QUANTITY</span>
                                 <div class="quantity-btn-wrp btn border-gray">
                                     <button class="quantity-btn minus text-light-black" aria-label="수량 감소">-</button>
@@ -151,7 +150,8 @@
                     </form>
                 </article>
             </section>
-        </div>
+        </div>             
+    </div>
 </div>
 <!-- // 페이지 시작 -->
         </main>

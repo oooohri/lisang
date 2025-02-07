@@ -45,67 +45,67 @@
             }
         }
     }
-    
-
+    // show more 버튼
+    .btn-wrp {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
 
 }
 
 //여성-상품상세
 .detail {
     .container {
-        display: flex;
-        gap: 130px;
         margin-top: 100px;
-        .prod-img-wrp {
-            display: flex;
-            align-items: center;
-            article.prod-img {
-                display: flex;
-                gap: 30px;
-                .additional-img {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 15px;
-                    cursor: pointer;
-                }
-                .main-img {
-                    img {
-                        height: 100%;
-                    }
-                }
-            }
-        }
-        .prod-info-wrp {
-            display: flex;
-            align-items: end;
+        .row {
             justify-content: center;
-            .prod-tit {
-                h2 {
-                    margin-bottom: 12px;
-                }
-            }
-            .prod-desc {
-                width: 370px;
-                margin: 23px 0 34px;
-            }
-            .prod-option {
-                .size-option {
-                    .btn {
-                        border-radius: 100px;
-                        padding: 9px 30px 9px 18px;
-                        width: 100px;
-                        .icon-dropdown {
-                            margin-left: 35px;
+            gap: 130px;
+            // section 1
+            .prod-img-wrp {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .prod-img {
+                    gap: 30px;
+                    .additional-img {
+                        display: flex;
+                        flex-wrap: wrap !important;
+                        gap: 15px;
+                        cursor: pointer;
+                        img {
+                            flex: 1;
                         }
                     }
                 }
-                .option-wrp {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-                    .color-option {
-                        display: flex;
-                        flex-direction: column;
+            }
+            // section 2
+            .prod-info-wrp {
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                .prod-tit {
+                    h2 {
+                        margin-bottom: 12px;
+                    }
+                }
+                .prod-desc {
+                    width: 370px;
+                    margin: 23px 0 34px;
+                }
+                .prod-option {
+                    .size-option {
+                        .btn {
+                            border-radius: 100px;
+                            padding: 9px 30px 9px 18px;
+                            width: 100px;
+                            .icon-dropdown {
+                                margin-left: 35px;
+                            }
+                        }
+                    }
+                    .row.option-wrp {
+                        gap: 20px;
                         .btn {
                             cursor: auto;
                             display: flex;
@@ -136,10 +136,10 @@
                                     position: absolute;
                                 }
                             }
-                            .check::after {
+                            label.check::after {
                                 position: absolute;
                                 content: "";
-                                background: url(../../img/shop/icon-chk.svg) no-repeat center;
+                                background: url(../img/shop/icon-chk.svg) no-repeat center;
                                 background-size: contain;
                                 width: 12px;
                                 height: 12px;
@@ -149,44 +149,38 @@
                                 transform: translate(-50%, -50%);
                             }
                         }
-                        
-                    }
-                    .quantity-option {
-                        display: flex;
-                        flex-direction: column;
-                        .quantity-btn-wrp {
-                            display: flex;
-                            padding: 0;
-                            width: 118px;
-                            height: 40px;
-                            .quantity-btn, p {
-                                flex: 1;
-                            }
-                            input {
-                                border-left: 2px solid #EBEAED;
-                                border-right: 2px solid #EBEAED;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                height: 100%;
-                                cursor: auto;
-                                width: 39.7px;
-                                text-align: center;
+                        .quantity-option {
+                            .quantity-btn-wrp {
+                                padding: 0;
+                                width: 118px;
+                                height: 40px;
+                                .quantity-btn, p {
+                                    flex: 1;
+                                }
+                                input {
+                                    border-left: 2px solid #EBEAED;
+                                    border-right: 2px solid #EBEAED;
+                                    height: 100%;
+                                    cursor: auto;
+                                    width: 39.7px;
+                                    text-align: center;
+                                }
                             }
                         }
                     }
-                }
-                .prod-detail-desc {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    margin: 37px 0 42px;
-                    li {
-                        list-style: disc;
+                    .prod-detail-desc {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        margin: 37px 0 42px;
+                        li {
+                            list-style: disc;
+                        }
                     }
                 }
             }
         }
+        
     }
     
 } 

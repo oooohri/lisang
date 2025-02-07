@@ -65,6 +65,9 @@ main {
     }
     section {
         margin-bottom: 100px;
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
     }
 }
 // footer
@@ -172,6 +175,9 @@ footer {
         .all {
             .row {
                 margin-bottom: 40px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
                 .col-lg {
                     display: flex;
                     flex-direction: column;
@@ -182,11 +188,14 @@ footer {
                     }
                 }
             }
+            
         }
         .detail {
-            .container {
-                flex-direction: column;
+            .row {
+                flex-wrap: wrap !important;
                 gap: 0;
+            }
+            .container {
                 margin-top: 60px;
                 .prod-img-wrp {
                     margin-bottom: 40px;
