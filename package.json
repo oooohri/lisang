@@ -1,7 +1,4 @@
 {
-  "dependencies": {
-    "easyzoom": "^2.6.0"
-  },
   "devDependencies": {
     "sass": "^1.83.4"
   }

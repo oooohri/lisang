@@ -28,18 +28,6 @@ $(document).ready(function () {
     });
 });
 
-// 페이지 로드 시 easyZoom 초기화
-$(window).on('load', function(){
-    // 페이지가 로드된 후 easyZoom을 초기화
-    $(document).ready(function() {
-        // 기존 easyZoom이 초기화되어 있는지 확인
-        var easyzoom = $('.easyzoom').data('easyZoom');
-        if (!easyzoom) {
-            $('.easyzoom').easyZoom(); // 초기화가 되어 있지 않으면 easyZoom 초기화
-        }
-    });
-});
-
 
 
 // detail - dropdown 동작
