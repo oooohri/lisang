@@ -1,14 +1,6 @@
 
 // 카테고리 선택
-.bx-wrp {
-    display: flex; gap: 30px;
-    .bx-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+.row {
         h2 {
             margin-top: 28px;
         }
@@ -25,7 +17,6 @@
         .btn {
             margin-bottom: 40px;
         }
-    }
 }
 
 // 여성-전체-상품
@@ -33,13 +24,16 @@
     .dropdown .btn:focus {
         box-shadow: none;
     }
-    // bx
-    .bx-wrp {
-        .bx {
+    .dropdown .btn:focus-visible {
+        box-shadow: 0 0 0 5px rgba(200,165,255,1);
+    }
+    // row
+    .row {
+        .col-lg {
             img {
                 border-radius: 10px;
             }
-            .bx-cont {
+            .bx {
                 border: 0;
                 .text-light-purple {
                     margin: 6px 0 13px;

@@ -24,7 +24,7 @@ input[type="number"] { -moz-appearance: textfield; -webkit-appearance: none; app
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; display: none; }
 input[type="number"]::-moz-spin-button { display: none; }
 
-
+*:focus-visible { box-shadow: 0 0 0 5px rgba(200,165,255,1); outline: none; }
 
 // color
 :root {--purple: #2f1893;--thick-purple: #1e0e62;--light-purple: #482be7;--gray: #ebeaed;--mint: #25dac5;--primary: #1087f5;--red: #ea3223;--container-padding: 0 20px;}

@@ -1,7 +1,14 @@
 function isMobile(){
 	return  $(window).width() < 992 ;
 }  
-
+$(window).on('load', function(){
+	$('.gnb-toggle').on('click', function(){
+		$('body').toggleClass('gnb-open');
+        
+        let isExpanded = $(this).attr('aria-expanded') === 'true';
+        $(this).attr('aria-expanded',!isExpanded);
+	});
+});
 
 // detail - 상품이미지 클릭 시 상세이미지 나타남
 $(document).ready(function () {
@@ -27,37 +34,6 @@ $(document).ready(function () {
         mainImage.css("width", "470px");
     });
 });
-
-// detail - 이미지 확대
-$(document).ready(function() {
-    // 초기 확대 적용
-    $("#zoom-img").elevateZoom({
-        zoomType: "lens",
-        lensShape: "round",
-        lensSize: 150,
-        scrollZoom: true
-    });
-
-    // 썸네일 클릭 시 메인 이미지 변경
-    $(".thumb").click(function() {
-        let newImage = $(this).attr("data-image");
-        let newZoomImage = $(this).attr("data-zoom-image");
-
-        $("#zoom-img").attr("src", newImage);
-        $("#zoom-img").attr("data-zoom-image", newZoomImage);
-
-        // 기존 줌 삭제 후 다시 적용
-        $(".zoomContainer").remove();
-        $("#zoom-img").elevateZoom({
-            zoomType: "lens",
-            lensShape: "round",
-            lensSize: 150,
-            scrollZoom: true
-        });
-    });
-});
-
-
 
 
 // detail - dropdown 동작

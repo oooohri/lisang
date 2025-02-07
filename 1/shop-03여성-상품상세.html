@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="node_modules/easyzoom/css/easyzoom.css">
     
     <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/elevatezoom.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/common.js"></script>
@@ -23,7 +21,7 @@
         <!-- header -->
         <header id="hd">
             <nav>
-                <a href="#" role="option" aria-selected="false" class="logo">Startup 3</a>
+                <a href="#" class="logo">Startup 3</a>
                 <ul id="gnb">
                     <li><a href="#none">Home</a></li>
                     <li><a href="#none">Features</a></li>
@@ -32,29 +30,29 @@
                     <li><a href="#none" class="icon search"></a></li>
                 </ul>
                 <ul class="auth">
-                    <li><a href="#none">Sign In</a></li>
-                    <li class=""><a href="#none" class="btn bg-purple">Sign Up</a></li>
+                    <li><a href="#none" role="button">Sign In</a></li>
+                    <li><a href="#none" class="btn bg-purple" role="button">Sign Up</a></li>
                 </ul>
                 <button type="button" class="gnb-toggle"></button>
             </nav>
-            <div class="gnb-menu">
-                <ul class="gnb-menu-inner">
-                    <li>
-                        <a href=""><strong>Home</strong></a>
+            <div class="gnb-menu" aria-label="모바일 네비게이션">
+                <ul class="gnb-menu-inner" role="menu">
+                    <li role="menuitem">
+                        <a href="#"><strong>Home</strong></a>
                     </li>
-                    <li>
-                        <a href=""><strong>Features</strong></a>
+                    <li role="menuitem">
+                        <a href="#"><strong>Features</strong></a>
                     </li>
-                    <li>
-                        <a href=""><strong>Blog</strong></a>
+                    <li role="menuitem">
+                        <a href="#"><strong>Blog</strong></a>
                     </li>
-                    <li>
+                    <li role="menuitem">
                         <a href="./shop-카테고리선택.html"><strong>Shop</strong></a>
                     </li>
                 </ul>
                 <div class="gnb-menu-auth">
-                    <a href="#none" class=""><span class="sign-in">Sign In</span></a>
-                    <a href="#none" class=""><span class="sign-up">Sign Up</span></a>
+                    <a href="#none" role="button" aria-label="로그인"><span class="sign-in">Sign In</span></a>
+                    <a href="#none" role="button" aria-label="회원가입"><span class="sign-up">Sign Up</span></a>
                 </div>
             </div>
         </header>
@@ -67,7 +65,7 @@
     <div class="container">               
             <section class="prod-img-wrp">
                 <article class="prod-img">
-                    <div class="additional-img thumbs">
+                    <div class="additional-img">
                         <img src="./img/shop/w-detail2.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail3.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail4.jpg" alt="상품 상세이미지" tabindex="0">
@@ -162,24 +160,24 @@
         <!-- footer  -->
         <footer id="ft">
             <nav>
-                <ul class="main-nav">
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Pricing Plans</a></li>
-                    <li><a href="">Our Works</a></li>
-                    <li><a href="">Brands</a></li>
+                <ul class="main-nav" role="menu">
+                    <li role="menuitem"><a href="#">Tour</a></li>
+                    <li role="menuitem"><a href="#">Features</a></li>
+                    <li role="menuitem"><a href="#">Pricing Plans</a></li>
+                    <li role="menuitem"><a href="#">Our Works</a></li>
+                    <li role="menuitem"><a href="#">Brands</a></li>
                 </ul>
             </nav>
-            <hr>
+            <hr aria-hidden="true">
             <div class="footer-info">
-                <div class="logo" tabindex="0">Startup 3</div>
+                <div class="logo" tabindex="0" aria-label="로고">Startup 3</div>
                 <p tabindex="0">Startup Framework contains components and <br> complex blocks which can easily be integrated into <br> almost any design.</p>
                 <p tabindex="0">Privacy Policy</p>
                 <p tabindex="0">Terms</p>
                 <ul class="sns">
-                    <li><a href="https://twitter.com"><i class="icon twitter"></i></a></li>
-                    <li><a href="https://facebook.com"><i class="icon facebook"></i></a></li>
-                    <li><a href="https://instagram.com"><i class="icon google-plus"></i></a></li>
+                    <li><a href="https://twitter.com" aria-label="트위터"><i class="icon twitter"></i></a></li>
+                    <li><a href="https://facebook.com" aria-label="페이스북"><i class="icon facebook"></i></a></li>
+                    <li><a href="https://instagram.com" aria-label="구글플러스"><i class="icon google-plus"></i></a></li>
                 </ul>
             </div>
         </footer>
