@@ -28,6 +28,36 @@ $(document).ready(function () {
     });
 });
 
+// detail - 이미지 확대
+$(document).ready(function() {
+    // 초기 확대 적용
+    $("#zoom-img").elevateZoom({
+        zoomType: "lens",
+        lensShape: "round",
+        lensSize: 150,
+        scrollZoom: true
+    });
+
+    // 썸네일 클릭 시 메인 이미지 변경
+    $(".thumb").click(function() {
+        let newImage = $(this).attr("data-image");
+        let newZoomImage = $(this).attr("data-zoom-image");
+
+        $("#zoom-img").attr("src", newImage);
+        $("#zoom-img").attr("data-zoom-image", newZoomImage);
+
+        // 기존 줌 삭제 후 다시 적용
+        $(".zoomContainer").remove();
+        $("#zoom-img").elevateZoom({
+            zoomType: "lens",
+            lensShape: "round",
+            lensSize: 150,
+            scrollZoom: true
+        });
+    });
+});
+
+
 
 
 // detail - dropdown 동작

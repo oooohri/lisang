@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="node_modules/easyzoom/css/easyzoom.css">
     
     <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="node_modules/easyzoom/dist/easyzoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/elevatezoom.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/common.js"></script>
+
 </head>
 <body>
     <div id="wrap">
@@ -66,7 +67,7 @@
     <div class="container">               
             <section class="prod-img-wrp">
                 <article class="prod-img">
-                    <div class="additional-img">
+                    <div class="additional-img thumbs">
                         <img src="./img/shop/w-detail2.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail3.jpg" alt="상품 상세이미지" tabindex="0">
                         <img src="./img/shop/w-detail4.jpg" alt="상품 상세이미지" tabindex="0">
@@ -74,8 +75,8 @@
                         <img src="./img/shop/w-detail6.jpg" alt="상품 상세이미지" tabindex="0">
                     </div>
                     <div class="main-img">
-                        <a href="./img/shop/w-detail-lg.jpg" >
-                            <img src="./img/shop/w-detail1.jpg" alt="상품 상세이미지">
+                        <a href="./img/shop/w-detail-lg.jpg">
+                            <img id="zoom-img" src="./img/shop/w-detail1.jpg" alt="상품 상세이미지" data-zoom-image="./img/shop/w-detail-lg.jpg">
                         </a>
                     </div>
                 </article>
