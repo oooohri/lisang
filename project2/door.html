@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="common/css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/door.css" />
+<script src="common/js/jquery.min.js"></script>
+<script src="common/js/jquery-ui.min.js"></script>
+<script src="common/js/jquery.ui.touch-punch.min.js"></script>
+<script src="common/js/bootstrap.min.js"></script>
+<script defer src="common/js/common.js"></script>
+<script defer src="js/door.js"></script>
+</head>
+<body>
+<div id="wrap" class="ready">
+    <!-- 인트로 -->
+    <div id="intro" class="wrap lab-main">
+        <div class="intro">
+            <p>Lesson 5</p>
+            <h1 class="intro-title">
+                <p>Think like <br> Sherlock Holmes!</p>
+            </h1>
+            <div class="intro-buttons">
+                <button type="button" class="sbtn" data-toggle="modal" data-target="#modal-goal" data-audio="524_e_sc_01/goal.mp3">Big idea</button>
+                <p>논리적 사고와 문제 해결</p>
+            </div>
+            <button type="button" class="sbtn sbtn-lg btn-start" data-target="#content">Let’s go!</button>
+        </div>
+    </div>
+    <!-- 내용 -->
+    <div id="content" class="content-wrap">
+        <!-- #1단계 -->
+        <section id="content1" class="content">
+            <div class="content-popup pop1">
+                <p>환영합니다.</p>
+                <p>지금부터 셜록 홈즈가 되어 문제를 해결해 보세요.</p>
+                <button type="button">시작하기</button>
+            </div>
+            <div class="content-door">
+                <div class="door-container">
+                    <div class="door door-left"></div>
+                    <div class="door door-right"></div>
+                </div>
+            </div>
+            <div class="content-popup pop2">
+                <p>총 세 문제를 풀어, 세 개의 숫자로 이루어진</p>
+                <p>암호를 찾아내 방을 탈출해 보세요.</p>
+                <button type="button">도전!</button>
+            </div>
+        </section>
+        <!-- #2단계 -->
+    </div>
+
+</div>
+<audio id="audio"></audio>
+<audio id="voice"></audio>
+<audio id="bgm" loop></audio>
+</body>
+</html>

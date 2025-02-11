@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url(bootstrap.min.css);
+/* Font */
+@font-face { font-weight:300; font-family:'NotoSerif'; src:url(../font/NotoSerifCJKkr-Light.woff) format('woff') } 
+@font-face { font-weight:400; font-family:'NotoSerif'; src:url(../font/NotoSerifCJKkr-Regular.woff) format('woff') } 
+@font-face { font-weight:500; font-family:'NotoSerif'; src:url(../font/NotoSerifCJKkr-Medium.woff) format('woff') } 
+@font-face { font-weight:700; font-family:'NotoSerif'; src:url(../font/NotoSerifCJKkr-Bold.woff) format('woff') } 
+@font-face { font-family: 'GmarketSans'; font-weight: 300; font-style: normal; src: url('../font/GmarketSansLight.woff') format('woff'); font-display: fallback } 
+@font-face { font-family: 'GmarketSans'; font-weight: 500; font-style: normal; src: url('../font/GmarketSansMedium.woff') format('woff'); font-display: fallback } 
+@font-face { font-family: 'GmarketSans'; font-weight: 700; font-style: normal; src: url('../font/GmarketSansBold.woff') format('woff'); font-display: fallback } 
+.font-sans { font-family: 'GmarketSans',sans-serif !important } 
+.font-serif { font-family:'NotoSerif',sans-serif !important; font-display:fallback } 
+@font-face { font-family: 'Cafe24Ssurround'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff'); font-weight: normal; font-style: normal; } 
+@font-face { font-family: 'OMPOP'; src: url('../font/ONE-Mobile-POP.woff') format('woff'); font-weight: 500; font-style: normal; } 
+
+/* reset with bootstrap */
+body { position:relative; -webkit-text-size-adjust:none; text-align:justify; overflow: hidden; } 
+body,input,textarea,select,button,table { font-weight:700; font-size:28px; line-height:1; letter-spacing: -0.04em; font-family:'GmarketSans','NotoSans',sans-serif; color:#111; font-display:fallback } 
+a,input,textarea,select,button { text-decoration:none; color:#231f20; outline:0 !important; -webkit-transition:color .4s,border-color .4s,background .4s,box-shadow .4s,opacity .4s; transition:color .4s,border-color .4s,background .4s,box-shadow .4s,opacity .4s } 
+a:hover,a:focus,a:active { color:inherit; text-decoration: none } 
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select { margin:0; padding:0 } 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: 700 } 
+input { background: none; border: 0; box-shadow: none } 
+input::-ms-clear,input::-ms-reveal { display:none; width:0; height:0 } 
+input::-webkit-search-decoration,input::-webkit-search-cancel-button,input::-webkit-search-results-button,input::-webkit-search-results-decoration { display:none } 
+li { list-style:none } 
+label { cursor:pointer } 
+table { width:100%; border-collapse:collapse } 
+a,button { cursor:pointer } 
+button { border:0; box-shadow:none; background:none } 
+i { font-style:normal } 
+img { max-width:100% } 
+
+
+/* Button */
+.sbtn { display: inline-flex; vertical-align: top; align-items: center; justify-content: center; position: relative; height: 50px; background: #08c186; box-shadow: 5px 5px 3px rgba(97, 96, 106, 0.2), .3em .3em .25em rgba(255,255,255,.3) inset, -.3em -.3em .25em rgba(0,0,0,.2) inset; font-size: 25px; color: #fff; transition: none; text-shadow: 1px 3px 0 rgba(0, 0, 0, 0.19); border-radius: 50px; } 
+/* .sbtn:before { content: ''; position: absolute; top: .3em; left: .4em; width: 40px; height: 30%; background: url(../img/btn-light.png) no-repeat 0 0/contain } */
+.sbtn-lg { font-size: 32px; height: 70px; } 
+.sbtn-purple { background-color: #7735a5 !important; } 
+.sbtn-blue { background-color: #7735a5 !important; } 
+
+/* 인트로 */
+.bx { border-radius: 20px; color: #fff; background: #8E9096; border: 5px solid #82858B } 
+#wrap { overflow: hidden; position: relative; width: 840px; height: 620px; transform-origin: 0 0; } 
+.wrap { width: 100%; height: 100% } 
+.tab-pane { height: 100% } 
+.tab-content { width:100%; height:100% } 
+#intro { display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100%; background: url(../../img/bg.png) no-repeat 50% 50% / cover } 
+.intro { text-align: center; margin-bottom: 30px; } 
+.intro-title { font-size: 80px; font-weight: 600; color: #fff; letter-spacing: -0.04em; line-height: 1.1; width: 835px; padding: 35px 0 20px; background: rgba(255,255,255,.16); border-radius: 40px; border: 1px solid rgba(255,255,255,.5); } 
+.intro-title>span { position: relative } 
+.intro-title>span:before, .intro-title>span:after { content: ''; position: absolute; top: -81px; left: calc( 100% + -27px ); width: 170px; height: 170px; background: url(../img/light.png) no-repeat 50% 50% / cover } 
+.intro-title>span:after { background-image: url(../img/light-on.png); animation: light-ani 2s infinite 1s linear } 
+@keyframes light-ani { 10%, 30%, 50% { opacity: 0 } 
+ 20%, 40%, 60%, 100% { opacity: 1 } 
+ }
+
+.btn-start { width: 505px; height: 100px; font-size: 45px; background: #ffae00 } 
+.icon-start { content:''; display:inline-block; width: 37px; height: 51px; margin: -12px 0 0 15px; background-image: url(../img/icon-start.png) } 
+.intro-buttons { margin: 30px 0 20px; display: flex; justify-content: center; align-items: center; gap: 15px } 
+.intro-buttons .sbtn { width: 245px; height: 80px; font-size: 35px; background: #056efc; } 
+.intro .ch { position: absolute; pointer-events: none; z-index: 5; animation-delay: .5s } 
+.char-ani.master { bottom: -132px; width: 465px; left: 874px } 
+.intro .animate__animated { animation-duration: .5s } 
+
+#modal-goal .ch { position: absolute; bottom: 28px; right: 43px } 
+#modal-goal .ch-ani { width: 160px; height: 192px; background: url(../img/ani-goal.png) no-repeat 0 0/auto 100%; /*animation: ani-goal .4s steps(2) infinite*/ } 
+/* @keyframes ani-goal { 100% { background-position: -320px; } 
+ }*/
+.intro-step { display: none; } 
+.intro-step .sbtn { width: 126px; position: absolute; top: 362px; left: 50%; margin-left: -63px } 
+.modal-step .ch { position: absolute; right: 0; bottom: 0; animation-duration: .5s } 
+.modal-step .ch-ani { width: 210px; height: 390px; background: url(../img/ani-step.png) no-repeat 0 0/auto 100%; animation: ani-step .4s steps(2) infinite } 
+@keyframes ani-step { 100% { background-position: -420px; } 
+ }
+.ani-stop { animation: none !important } 
+
