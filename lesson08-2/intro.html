@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=1920,height=980" name="viewport" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="./common/css/common.css" />
+    <script src="./common/js/jquery.min.js"></script>
+    <script defer src="./common/js/jquery-ui.min.js"></script>
+    <script defer src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="./common/js/interaction.js"></script>
+    <script defer src="./common/js/bootstrap.min.js"></script>
+    <script defer src="./common/js/video-js.js"></script>
+    <script defer src="./common/js/common.js"></script>
+    <!-- 페이지별 -->
+    <script src="js/intro.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/intro.css"/>
+</head>
+
+<body>
+
+
+
+<div id="wrap">
+    <!-- <header id="hd">
+        <p class="lesson-title">
+            <strong>암석의 순환 알아보기</strong>
+        </p>
+        <div class="hd-btns">
+            <button type="button" data-toggleclass="muted" class="icon hd-sound">sound</button>
+            <button type="button" data-active="start" class="icon hd-home">home</button>
+            <button type="button" data-toggle="modal" data-target="#vodModal" class="icon hd-video">video</button>
+            <button type="button" class="icon hd-close">close</button>
+        </div>
+    </header> -->
+
+    <main id="ct" data-step="start">
+        <!-- <div id="stage1"></div> -->
+
+        <div id="stage2" class="d-flex" style="gap: 1.875rem; width: 100%;">
+            <div class="left-list">
+                <div class="img-box" style="position: relative;">
+                    <img src="./img/intro/img1.png" alt="" style="width: 62.5rem;">
+                    <div class="rock-list" style="font-size: 20px;  position: absolute; top: 443px; left: 197px; width: 600px; height: 490px; border: 1px solid red;">
+                        <span id="left-rock1" style="position: relative; left: 240px;" ></span>
+                        <span id="left-rock2" style="position: relative; top: 170px; left: -80px;"></span>
+                        <span id="left-rock3" style="position: relative; top: 70px; left: 240px;"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="right-list" style="font-size: 20px;">
+                <div class="text-box" style="border: 0.0625rem solid; padding: 0.625rem; width: 400px; height: 500px;">
+                    <div class="title">암석의 순환 과정</div>
+                    <div class="rock-list" style="padding: 10px; height: 100px;">
+                        <span id="right-rock1" class="draggable" style="padding: 10px; border: 1px solid; border-radius: 50%; ">화성암</span>
+                        <span id="right-rock2" class="draggable" style="padding: 10px;">퇴적암</span>
+                        <span id="right-rock3" class="draggable" style="padding: 10px;">변성암</span>
+                    </div>
+                    <div class="explan-list">
+                        <span>식어서 <br> 굳어짐.</span>
+                        <span>녹음.</span>
+                        <span>잘게 <br> 부서짐.</span>
+                    </div>
+                </div>
+                <div class="answer-box">
+                    <div><i></i><span>정답</span></div>
+                    <div>
+                        <span>켜기</span>
+                        <span>끄기</span>
+                    </div>
+                </div>
+                <button type="button">정리하기</button>
+                <div class="replay">
+                    <button type="button"></button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</div>
+
+<!-- 팝업 -->
+<!-- <div id="startModal" class="modal fade modal-message" aria-hidden="true" style="display: none;" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                <div class="text-center">
+                    <p class="mt20">
+                        겨울에 해 보고 싶은 활동을 찾아 봅시다.
+                    </p>
+
+                    <p class="mt45">
+                        <button id="btnStart" type="button" data-active="stage1" class="no-style img-button">
+                            <img src="./common/img/btn-start.png" alt="시작하기">
+                            <img class="over" src="./common/img/btn-start-over.png" alt="시작하기">
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<script src="./js/data.make.js"></script>
+<script src="./js/dragword.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/common.send.js"></script>
+<script src="./js/common.receive.js"></script>
+
+</body>
+</html>

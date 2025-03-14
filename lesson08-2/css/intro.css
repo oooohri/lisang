@@ -1,0 +1,14 @@
+#left-rock1, #left-rock2, #left-rock3 {
+    width: 100px; /* 예시로 너비 지정 */
+    height: 30px; /* 예시로 높이 지정 */
+    display: inline-block; /* span 요소는 기본적으로 inline이므로 display를 inline-block으로 설정 */
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+
+
+.draggable {
+    position: relative; /* draggable 요소들이 이동할 수 있도록 설정 */
+}
